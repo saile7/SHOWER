@@ -305,7 +305,7 @@ function createWhatsappMessage() {
 
     const message =
 
-`🎉 *CONFIRMACIÓN GENDER REVEAL* 🎉
+`🎉 *CONFIRMACIÓN Al BABYSHOWER* 🎉
 
 👤 *Nombre:*
 ${name}
