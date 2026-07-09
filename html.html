@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gender Reveal | Maxiury & Jonathan</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Fondo decorativo -->
+    <div class="background"></div>
+
+    <!-- ================= HERO ================= -->
+
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <p class="welcome">
+                ¡Estás invitado!
+            </p>
+
+            <h1>
+                ¡Acompáñanos a descubrir el gran secreto!
+            </h1>
+
+            <h2>
+                Maxiury ❤️ Jonathan
+            </h2>
+
+            <p class="description">
+                Un pequeño milagro viene en camino...
+                ¿Será niño o niña?
+                Ven a compartir con nosotros este momento tan especial.
+            </p>
+
+            <a href="#evento" class="btn-primary">
+                Ver Invitación
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- ================= CONTADOR ================= -->
+
+    <section class="countdown-section">
+
+        <h2>Faltan...</h2>
+
+        <div class="countdown">
+
+            <div class="time-box">
+                <span id="days">00</span>
+                <small>Días</small>
+            </div>
+
+            <div class="time-box">
+                <span id="hours">00</span>
+                <small>Horas</small>
+            </div>
+
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <small>Minutos</small>
+            </div>
+
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <small>Segundos</small>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= DETALLES ================= -->
+
+    <section id="evento" class="event-section">
+
+        <h2>Detalles del Evento</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                <h3>Fecha</h3>
+
+                <p>
+                    Sábado 15 de Agosto de 2026
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <h3>Hora</h3>
+
+                <p>
+                    2:00 PM
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <h3>Lugar</h3>
+
+                <p>
+                    San Marcos
+                </p>
+
+            </div>
+
+        </div>
+
+        <a href="https://maps.app.goo.gl/mDpnAgAYZbBx2X2R6?g_st=aw" target="_blank" class="maps-btn">
+
+            <i class="fa-solid fa-map-location-dot"></i>
+
+            Ver ubicación en Google Maps
+
+        </a>
+
+    </section>
+
+    <!-- ================= VOTACIÓN ================= -->
+
+    <section class="vote-section">
+
+        <h2>
+            💙💗 La Gran Apuesta 💗💙
+        </h2>
+
+        <p>
+
+            ¿Qué crees que será?
+
+        </p>
+
+        <div class="vote-buttons">
+
+            <button class="girl-btn" id="girlBtn">
+
+                💗 Niña
+
+            </button>
+
+            <button class="boy-btn" id="boyBtn">
+
+                💙 Niño
+
+            </button>
+
+        </div>
+
+        <div id="voteMessage" class="vote-message">
+
+        </div>
+
+        <div class="result-box">
+
+            <div class="result-title">
+
+                Resultado de las apuestas
+
+            </div>
+
+            <div class="progress">
+
+                <div id="girlBar" class="girl-progress">
+
+                    55%
+
+                </div>
+
+            </div>
+
+            <div class="progress">
+
+                <div id="boyBar" class="boy-progress">
+
+                    45%
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= RSVP ================= -->
+
+    <section class="rsvp">
+
+        <h2>
+
+            Confirma tu Asistencia
+
+        </h2>
+
+        <form id="rsvpForm">
+
+            <div class="input-group">
+
+                <label>
+
+                    Nombre Completo
+
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Escribe tu nombre"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>
+
+                    ¿Asistirás?
+
+                </label>
+
+                <select id="attendance">
+
+                    <option>
+
+                        Sí, ¡allí estaré!
+
+                    </option>
+
+                    <option>
+
+                        No podré asistir
+
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>
+
+                    Número de acompañantes
+
+                </label>
+
+                <input
+                    type="number"
+                    id="guests"
+                    min="0"
+                    max="10"
+                    value="0">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>
+
+                    Comentarios o alergias
+
+                </label>
+
+                <textarea
+                    id="comments"
+                    rows="5"
+                    placeholder="Escribe aquí..."></textarea>
+
+            </div>
+
+            <button type="submit" class="confirm-btn">
+
+                Confirmar Asistencia
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- ================= GALERÍA ================= 
+
+    <section class="gallery">
+
+        <h2>
+
+            Un pequeño vistazo...
+
+        </h2>
+
+        <div class="gallery-grid">
+
+            <div class="photo"></div>
+
+            <div class="photo"></div>
+
+            <div class="photo"></div>
+
+            <div class="photo"></div>
+
+        </div> 
+
+    </section> -->
+
+    <!-- ================= FRASE ================= -->
+
+    <section class="quote">
+
+        <blockquote>
+
+            "Cada bebé trae consigo un pedacito de cielo para iluminar nuestras vidas."
+
+        </blockquote>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>
+
+            ¡Los esperamos con mucho cariño!
+
+        </h3>
+
+        <p>
+
+            Maxiury ❤️ Jonathan
+
+        </p>
+
+        <small>
+
+            Gracias por ser parte de este momento tan especial.
+
+        </small>
+
+    </footer>
+
+    <!-- Confetti -->
+    <canvas id="confetti"></canvas>
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
